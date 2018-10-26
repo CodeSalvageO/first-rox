@@ -19,3 +19,13 @@
 </tr>
 </table>
 <input id="btnAddMessage" type="button" value="Add Message" onclick="addMessage()">
+<script>
+
+var docBook;
+
+function initializeMessage()
+{
+  docBook = document.all("docBook").XMLDocument;
+  docBook.async = false;
+  renderElements();
+}
